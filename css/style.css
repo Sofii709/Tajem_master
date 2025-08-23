@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.tajam {
+    padding-top: 10px;
+}
+
+.taj img {
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+.navigation ul {
+    column-gap: 25px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.navigation a {
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.navigation a:hover {
+    color: #00e0d0;
+}
+
+.header {
+    background: purple url(../img/main.png) center/cover no-repeat;
+    height: 600px;
+}
+
+.head {
+    padding-bottom: 150px;
+}
+
+.agency {
+    text-align: center;
+}
+
+.agency h1 {
+    font-size: 32px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.agency p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.agency a {
+    font-size: 16px;
+    color: #00e0d0;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: #00e0d0 1px solid;
+    border-radius: 4px;
+    transition: all 1s ease;
+}
+
+.agency a:hover {
+    background-color: #00e0d0;
+    color: #fff;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    column-gap: 3px;
+}
+
+.ourstory {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ourstory .text {
+    width: 50%;
+}
+
+.ourstory h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #413d4b;
+    font-weight: 700;
+}
+
+.ourstory p {
+    padding-top: 30px;
+    opacity: 0.749;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #413d4b;
+    font-weight: 300;
+}
+
+.ourstory a {
+    font-size: 16px;
+    color: #00e0d0;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 25px;
+    padding: 10px 20px;
+    border: #00e0d0 1px solid;
+    border-radius: 4px;
+    transition: all 1s ease;
+}
+
+.ourstory a:hover {
+    background-color: #00e0d0;
+    color: #fff;
+}
+
+.play {
+    background: #413d4b url(../img/maintwo.png) center/cover no-repeat;
+    height: 600px;
+}
+
+.playy {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.play p {
+    padding-top: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 900;
+    transition: all 1s ease;
+}
+
+.play a {
+    text-decoration: none;
+}
+
+.play p:hover {
+    color: #00e0d0;
+}
