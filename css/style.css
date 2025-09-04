@@ -56,6 +56,10 @@ html {
     color: #00e0d0;
 }
 
+.navigation {
+  position: relative;
+}
+
 .header {
     background: purple url(../img/main.png) center/cover no-repeat;
     height: 600px;
@@ -63,6 +67,68 @@ html {
 
 .head {
     padding-bottom: 30px;
+}
+
+#black_bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+#menu {
+  position: fixed;
+  width: 60vw;
+  height: 10vh;
+  top: 0;
+  left: -200%;
+  z-index: 3;
+  transition: all 1s ease;
+}
+
+#cancel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#burger,
+#burger:before,
+#burger:after{
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+}
+
+#burger_container {
+  position: relative;
+  right: 50px;
+  
+}
+#burger {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  transform: translateY(150%);
+}
+#burger:before,
+#burger:after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+#burger:before {
+  top: -10px;
+}
+
+#burger:after {
+  bottom: -10px
 }
 
 .agency {
@@ -116,7 +182,7 @@ html {
 }
 
 .ourstory .text {
-    width: 50%;
+    width: 100%;
 }
 
 .ourstory h2 {
@@ -199,9 +265,20 @@ html {
     }
 
     .agency a {
-    font-size: 20px;
-    padding: 10px 20px;
-}
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    #menu {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  #burger {
+    display: none;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -224,4 +301,13 @@ html {
         padding-top: 120px;
         column-gap: 3px;
     }
+
+    .story {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ourstory .text {
+    width: 50%;
+}
 }

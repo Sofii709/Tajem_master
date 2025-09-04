@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>tajem_master</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,13 +12,15 @@
 <body>
     <header class="header">
         <div class="wrapper flex-between head">
+            <div id="black_bg"></div>
             <div class="tajam">
                 <a href="#"><img src="img/Vector Smart Object.svg" alt="vso"></a> <a class="taj" href=""><img
                         src="img/tajam.svg" alt=""></a>
             </div>
             <div class="navigation">
                 <nav>
-                    <ul class="flex-between">
+                    <ul id="menu" class="flex-between">
+                        <li id="cancel"><a href="">X</a></li>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
                         <li><a href="">EXPERTISE</a></li>
@@ -27,7 +30,21 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </nav>
+
+                <ul class="social flex-between items-centerf">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">EXPERTISE</a></li>
+                    <li><a href="">TEAMS</a></li>
+                    <li><a href="">WORKS</a></li>
+                    <li><a href="">PEOPLE SAY</a></li>
+                    <li><a href="">CONTACT</a></li>
             </div>
+            </ul>
+            <div id="burger_container">
+                <span id="burger"></span>
+            </div>
+        </div>
         </div>
         <section class="agency wrapper">
             <h1>We Are Awesome Creative Agency</h1>
@@ -48,7 +65,7 @@
     </header>
     <main class="main">
         <section class="wrapper ourstory">
-            <div class="flex-around">
+            <div class="story">
                 <div><img src="img/logoimage.png" alt=""></div>
                 <div class="text">
                     <h2>OUR STORY</h2>
@@ -76,6 +93,7 @@
             </div>
         </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
