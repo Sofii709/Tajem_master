@@ -1,14 +1,14 @@
-burger_container.onclick = () => {
+burger.onclick = () => {
   menu.style.left = 0;
-  black_bg.style.display = "block"
+  dark.style.display = "block"
 }
 
 cancel.onclick = () => {
   menu.style.left = "-100%"
-  black_bg.style.display = "none"
+  dark.style.display = "none"
 }
 
-black_bg.onclick = () => {
+dark.onclick = () => {
   menu.style.left = "-100%"
-  black_bg.style.display = "none"
+  dark.style.display = "none"
 }
