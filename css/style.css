@@ -90,6 +90,7 @@ html {
 
 .menu {
     position: fixed;
+    width: 100%;
     top: 0;
     left: -200%;
     height: 100vh;
@@ -243,8 +244,14 @@ html {
     padding: 50px 0px;
 }
 
-.expertise  figure{
+.di {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.expertise figure {
     padding: 30px 20px;
+    min-height: 200px;
 }
 
 .expertise a {
@@ -289,18 +296,9 @@ html {
     max-width: 50px;
 }
 
-.expertise .one {
-    border-right: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-}
-
-.expertise .two {
-    border-top: 1px solid #ebebeb;
-}
-
 .expertiseblock {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 @media screen and (min-width:464px) {
@@ -321,6 +319,38 @@ html {
     .agency a {
         font-size: 20px;
         padding: 10px 20px;
+    }
+
+    .expertiseblock {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .expertise figure {
+        padding: 30px 20px;
+        min-height: 265px;
+    }
+
+    .expertiseblock div:first-child {
+        border-right: #ebebeb solid 1px;
+        border-bottom: #ebebeb solid 1px;
+    }
+
+    .expertiseblock div:nth-child(3) {
+        border-right: #ebebeb solid 1px;
+        border-bottom: #ebebeb solid 1px;
+    }
+
+    .expertiseblock div:nth-child(5) {
+        border-right: #ebebeb solid 1px;
+    }
+
+    .expertiseblock div:nth-child(2) {
+        border-bottom: #ebebeb solid 1px;
+    }
+
+    .expertiseblock div:nth-child(4) {
+        border-bottom: #ebebeb solid 1px;
     }
 }
 
@@ -372,5 +402,32 @@ html {
 
     .menu li {
         padding: 0;
+    }
+
+    .expertiseblock {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .expertise .one {
+        border-right: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .expertise .two {
+        border-top: 1px solid #ebebeb;
+    }
+
+    .expertise .three {
+        border-top: 1px solid #ebebeb;
+        border-right: 1px solid #ebebeb;
+    }
+
+    .expertiseblock div:nth-child(3) {
+        border-right: none;
+    }
+
+    .expertiseblock div:nth-child(4) {
+        border-bottom: none;
     }
 }
