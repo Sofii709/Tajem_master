@@ -241,12 +241,13 @@ html {
 }
 
 .expertise {
-    padding: 50px 0px;
+    padding: 70px 0px;
 }
 
 .di {
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .expertise figure {
@@ -299,6 +300,197 @@ html {
 .expertiseblock {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+}
+
+.team {
+    background: #333 url(../img/mainfive.png) center/cover no-repeat;
+    min-height: 650px;
+}
+
+.team .ki {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.team h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.team p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #f9f9f9;
+    font-weight: 400;
+    text-align: center;
+}
+
+.team a {
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #00e0d0;
+    font-weight: 400;
+    border: #00e0d0 solid 2px;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+.ma {
+    display: flex;
+    justify-content: center;
+}
+
+.team a:hover {
+    color: #fff;
+    background-color: #00e0d0;
+}
+
+.team h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #f3f3f3;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.team h2,
+h3,
+.team a {
+    text-transform: uppercase;
+}
+
+.teams figure {
+    display: inline-block;
+    margin-left: 30px;
+    border: #ebebeb solid 1px;
+    margin-bottom: 30px;
+    max-width: 250px;
+}
+
+.teams img {
+    width: 100%;
+}
+
+.teams p {
+    text-transform: uppercase;
+    opacity: 0.702;
+    font-size: 13px;
+    color: #fafafa;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.teams h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.teams {
+    flex-wrap: wrap;
+    column-gap: 30px;
+    padding-top: 50px;
+}
+
+.gray_container {
+    padding: 50px 0px;
+}
+
+.gray_container div:first-child {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.gray_container p:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.gray_container h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #413d4b;
+    font-weight: 700;
+}
+
+.first {
+    padding-bottom: 70rem;
+}
+
+.first a {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #413d4b;
+    transition: all 1s ease;
+    text-decoration: none;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.first a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    width: 11rem;
+    height: 11rem;
+    border-right: 1px solid #413d4b;
+    border-bottom: 1px solid #413d4b;
+    transform: translateY(-100%) rotate(-45deg);
+    transition: .5s;
+}
+
+.first a:hover::before {
+    border-color: #00e0d0;
+    transform: translateY(-100%) rotate(45deg);
+}
+
+.first a:hover {
+    color: #00e0d0;
+}
+
+.ka a {
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #00e0d0;
+    font-weight: 400;
+    border: #00e0d0 solid 2px;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 1s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ka a:hover {
+    color: #fff;
+    background-color: #00e0d0;
+}
+
+.gray_block {
+    padding: 150px 0;
+    margin-bottom: 70rem;
+    background-color: #ddd;
 }
 
 @media screen and (min-width:464px) {
@@ -355,6 +547,10 @@ html {
 }
 
 @media screen and (min-width:768px) {
+    html {
+        font-size: 0.85;
+    }
+
     .head {
         padding-bottom: 100px;
     }
@@ -429,5 +625,20 @@ html {
 
     .expertiseblock div:nth-child(4) {
         border-bottom: none;
+    }
+
+    .teams {
+        display: flex;
+        justify-content: center;
+    }
+
+    .team h4 {
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+
+    .gray_container div:first-child {
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
