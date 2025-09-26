@@ -537,7 +537,7 @@ h3,
 .center {
     display: flex;
     justify-content: center;
-    column-gap: 0px;
+    column-gap: 6px;
     padding-top: 30px;
 }
 
