@@ -405,6 +405,8 @@ h3,
 
 .teams {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
     column-gap: 30px;
     padding-top: 50px;
 }
@@ -493,6 +495,58 @@ h3,
     background-color: #ddd;
 }
 
+.people {
+    background: #333 url(../img/mainthree.png) center/cover no-repeat;
+    height: 700px;
+}
+
+.dote {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.people p {
+    opacity: 0.851;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.people h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.people h4 {
+    opacity: 0.702;
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    column-gap: 0px;
+    padding-top: 30px;
+}
+
+.center img:first-child,
+.center img:last-child {
+    max-height: 20px;
+    transform: translateY(100%);
+}
+
 @media screen and (min-width:464px) {
     .head {
         padding-bottom: 90px;
@@ -543,6 +597,18 @@ h3,
 
     .expertiseblock div:nth-child(4) {
         border-bottom: #ebebeb solid 1px;
+    }
+
+    .people {
+        background: #333 url(../img/mainthree.png) center/cover no-repeat;
+        height: 600px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        padding-top: 30px;
     }
 }
 
@@ -640,5 +706,10 @@ h3,
     .gray_container div:first-child {
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .people {
+        background: #333 url(../img/mainthree.png) center/cover no-repeat;
+        height: 500px;
     }
 }
