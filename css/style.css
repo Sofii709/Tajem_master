@@ -516,6 +516,10 @@ h3,
     padding-top: 70px;
 }
 
+.people {
+    margin-bottom: 50px;
+}
+
 .people p {
     opacity: 0.851;
     font-size: 16px;
@@ -613,7 +617,7 @@ h3,
 }
 
 .foot a>p {
-    padding-top: 5px;
+    padding-top: 10px;
     transition: all 1s ease;
 }
 
@@ -633,6 +637,7 @@ h3,
 .image {
     column-gap: 5px;
     max-height: 40px;
+    padding-top: 20px;
 }
 
 .copyright ul {
@@ -667,6 +672,10 @@ h3,
 .copyright p,
 li {
     font-size: 12px;
+}
+
+.copyright p {
+    padding-bottom: 30px;
 }
 
 .king {
