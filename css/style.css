@@ -508,7 +508,7 @@ h3,
 
 .people {
     background: #333 url(../img/mainthree.png) center/cover no-repeat;
-    height: 700px;
+    min-height: 600px;
 }
 
 .dote {
@@ -684,7 +684,7 @@ li {
 }
 
 .people {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 @media screen and (min-width:464px) {
